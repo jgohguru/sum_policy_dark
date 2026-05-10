@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  
+  <meta charset="UTF-8">
+
+  
+  <style>
+        /* SUM 고대비 다크 테마 스타일 */
+        body { background-color: #000; margin: 0; padding: 0; }
+        .privacy-policy { font-family: 'Pretendard', 'Malgun Gothic', sans-serif; line-height: 1.8; color: #e5e5e5; max-width: 900px; margin: 0 auto; padding: 60px 20px; text-align: justify; }
+        
+        /* 헤더 및 섹션 타이틀 */
+        .privacy-policy h1 { font-size: 32px; font-weight: 700; color: #ffffff; border-bottom: 2px solid #0052cc; padding-bottom: 20px; margin-bottom: 40px; }
+        .privacy-policy h2 { font-size: 22px; font-weight: 600; color: #60afff; margin-top: 50px; margin-bottom: 20px; border-left: 5px solid #0052cc; padding-left: 15px; }
+        .privacy-policy h3 { font-size: 18px; font-weight: 600; color: #ffffff; margin-top: 30px; margin-bottom: 12px; }
+        
+        /* 2026년 개인정보 처리방침 가이드 표준 라벨링 */
+        .policy-labeling { border: 1px solid #444; border-radius: 16px; padding: 25px; margin-bottom: 20px; background-color: #0d0d0d; box-shadow: 0 4px 25px rgba(0,0,0,0.7); }
+        .labeling-title { font-weight: bold; font-size: 19px; color: #60afff; margin-bottom: 20px; display: flex; align-items: center; }
+        .labeling-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; }
+        .labeling-item { border: 1px solid #333; padding: 18px; border-radius: 12px; text-align: center; background: #151515; }
+        .labeling-item .icon { font-size: 26px; margin-bottom: 10px; display: block; }
+        .labeling-text { font-size: 13px; font-weight: 600; color: #bbb; display: block; }
+        .labeling-value { font-size: 12px; color: #ffffff; margin-top: 6px; display: block; font-weight: bold; }
+
+        /* 테이블 스타일 */
+        .privacy-policy table { width: 100%; border-collapse: collapse; margin: 25px 0; background-color: #050505; border-radius: 8px; }
+        .privacy-policy th, .privacy-policy td { border: 1px solid #333; padding: 14px; font-size: 14px; }
+        .privacy-policy th { background-color: #1a1a1a; color: #60afff; font-weight: 700; text-align: center; }
+        .privacy-policy td { color: #f0f0f0; }
+        
+        /* 목차(TOC) */
+        .privacy-policy .toc { background-color: #0a0a0a; border: 1px solid #222; padding: 25px; border-radius: 12px; margin-top: -60px; margin-bottom: 40px; }
+        .privacy-policy .toc h3 { margin-top: 0; color: #bbb; font-size: 15px; }
+        .privacy-policy .toc ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .privacy-policy .toc a { color: #ccc; text-decoration: none; font-size: 14px; }
+        .privacy-policy .toc a:hover { color: #60afff; text-decoration: underline; }
+        
+        /* 강조 및 박스 요소 */
+        .important-note { background: #2a0e0e; border: 1px solid #8e2121; padding: 18px; border-radius: 8px; margin: 25px 0; font-size: 14px; color: #ffa39e; }
+        .privacy-policy strong { color: #ffffff; font-weight: 600; }
+        .privacy-policy li { margin-bottom: 12px; color: #e5e5e5; }
+    </style>
+</head><body>
+<div class="privacy-policy">
+<h1>개인정보 처리방침 (V2.0)</h1>
+<div class="policy-labeling">
+<div class="labeling-title">🔍 핵심 개인정보 처리 표시 (Labeling)</div>
+<div class="labeling-grid">
+<div class="labeling-item"> <span class="icon">📧</span> <span class="labeling-text">수집 항목</span> <span class="labeling-value">민원인
+성명, 연락처</span> </div>
+<div class="labeling-item"> <span class="icon">⚖️</span> <span class="labeling-text">처리 목적</span> <span class="labeling-value">민원 처리
+및 R&amp;D</span> </div>
+<div class="labeling-item"> <span class="icon">📅</span> <span class="labeling-text">보유 기간</span> <span class="labeling-value">민원 종료
+후 3년</span> </div>
+<div class="labeling-item"> <span class="icon">🤝</span> <span class="labeling-text">제3자 제공</span> <span class="labeling-value">있음
+(사고 발생 시)</span> </div>
+<div class="labeling-item"> <span class="icon">🤖</span> <span class="labeling-text">자동화 결정</span> <span class="labeling-value">있음
+(자율주행)</span> </div>
+<div class="labeling-item"> <span class="icon">📞</span> <span class="labeling-text">보호책임자</span> <span class="labeling-value">hslee@smobi.ai</span>
+</div>
+</div>
+</div>
+<p><strong>주식회사 에스유엠</strong>(이하 ‘회사’)은 「개인정보 보호법」 및 관계 법령에 따라 정보주체의
+개인정보를 보호하고 관련 고충을 신속하게 처리할 수 있도록 다음과 같이 개인정보 처리방침을 수립·공개합니다.</p>
+<nav class="toc"> </nav>
+<h3>[목차]</h3>
+<ul>
+  <li><a href="#section1">1. 개인정보의 처리 목적</a></li>
+  <li><a href="#section2">2. 처리하는 개인정보의 항목</a></li>
+  <li><a href="#section3">3. 개인정보의 처리 및 보유기간</a></li>
+  <li><a href="#section4">4. 개인정보의 제3자 제공</a></li>
+  <li><a href="#section5">5. 개인정보 처리업무의 위탁</a></li>
+  <li><a href="#section6">6. 개인정보의 파기 절차 및 방법</a></li>
+  <li><a href="#section7">7. 정보주체의 권리·의무</a></li>
+  <li><a href="#section8">8. 안전성 확보 조치</a></li>
+  <li><a href="#section9">9. 자동화된 결정에 대한 권리</a></li>
+  <li><a href="#section10">10. 이동형 영상기기 운영</a></li>
+  <li><a href="#section11">11. 보호책임자 및 연락처</a></li>
+</ul>
+<h2 id="section1">1. 개인정보의 처리 목적</h2>
+<p>회사는 다음의 목적을 위하여 개인정보를 처리합니다. 회사는 홈페이지를 통한 회원 가입을 진행하지 않으며, 아래 목적 이외의
+용도로는 이용하지 않습니다.</p>
+<ul>
+  <li><strong>민원 및 고충 처리:</strong> 민원인의 신원 확인, 민원 사항 확인, 사실조사를 위한
+연락·통지, 처리 결과 통보</li>
+  <li><strong>자율주행 R&amp;D:</strong> 자율주행 알고리즘 고도화, 주변 환경 인식 및 판단 모델 학습</li>
+  <li><strong>사고 조사:</strong> 자율주행 차량 사고 발생 시 원인 규명을 위한 데이터 분석, 국토교통부
+자율주행자동차 사고조사위원회 및 보험사에 사고관련 정보 제공</li>
+</ul>
+<h2 id="section2">2. 처리하는 개인정보의 항목</h2>
+<table>
+  <thead> <tr>
+    <th>구분</th>
+    <th>수집 항목</th>
+    <th>수집 방법</th>
+  </tr>
+  </thead> <tbody>
+    <tr>
+      <td><strong>민원 처리</strong></td>
+      <td>성명, 연락처(전화번호 또는 이메일), 문의/민원 내용</td>
+      <td>이메일, 전화, 서면 접수</td>
+    </tr>
+    <tr>
+      <td><strong>주행 데이터</strong></td>
+      <td>주행 영상 및 이미지, GPS, 로그 데이터</td>
+      <td>테스트 차량 운행 중 자동 수집</td>
+    </tr>
+    <tr>
+      <td><strong>접속 정보</strong></td>
+      <td>IP주소, 쿠키, 기기정보, 방문기록</td>
+      <td>웹사이트 이용 시 자동 생성</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="section3">3. 개인정보의 처리 및 보유기간</h2>
+<p>회사는 법령에 따른 보유 기간 또는 정보주체로부터 동의받은 기간 내에서 개인정보를 처리·보유합니다.</p>
+<ul>
+  <li><strong>민원 및 고충 처리 기록:</strong> 민원 처리 종료 후 <strong>3년</strong></li>
+  <li><strong>자율주행 R&amp;D 데이터:</strong> 수집 후 최대 5년 (가명 처리 시 연구 목적 달성
+시까지)</li>
+  <li><strong>이동형 영상 정보:</strong> 촬영 후 30일 이내 (사고 증빙 등 정당한 사유가 있는 경우 예외)</li>
+</ul>
+<h2 id="section4">4. 개인정보의 제3자 제공</h2>
+<p>회사는 정보주체의 동의가 있거나 법률의 특별한 규정에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.</p>
+<table>
+  <thead> <tr>
+    <th>제공받는 자</th>
+    <th>제공 목적</th>
+    <th>제공 항목</th>
+    <th>보유 기간</th>
+  </tr>
+  </thead> <tbody>
+    <tr>
+      <td>보험사 및 사고조사 위원회</td>
+      <td>자율주행 사고 원인 규명 및 보험 처리</td>
+      <td>사고 시점 주행 영상, GPS, 로그</td>
+      <td>사고 처리 종료 시까지</td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="section5">5. 개인정보 처리업무의 위탁</h2>
+<p>회사는 원활한 업무 처리를 위해 아래와 같이 업무를 위탁할 수 있으며, 수탁자가 지정/변경될 경우 지체 없이 본 방침을
+통해 공개합니다.</p>
+<ul>
+  <li><strong>IT 인프라 유형:</strong> 클라우드 서버 운영 및 데이터 보관 (i.e. AWS 등)</li>
+  <li><strong>데이터 가공 유형:</strong> AI 학습 데이터 레이블링 및 영상 비식별화 처리<br>
+  </li>
+</ul>
+<h2 id="section6">6. 개인정보의 파기 절차 및 방법</h2>
+<p>회사는 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를
+파기합니다.</p>
+<ul>
+  <li><strong>절차:</strong> 파기 사유 발생 시 대상 선정 후 보호책임자의 승인을 거쳐 파기합니다.</li>
+  <li><strong>방법:</strong> 전자적 파일은 기록을 재생할 수 없는 기술적 방법을 사용하며, 종이 문서는
+분쇄하거나 소각합니다.</li>
+</ul>
+<h2 id="section7">7. 정보주체와 법정대리인의 권리·의무</h2>
+<p>정보주체는 언제든지 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다. 권리 행사는 서면, 전자우편 등을 통해
+가능하며 회사는 이에 대해 지체 없이 조치하겠습니다.</p>
+<h2 id="section8">8. 개인정보의 안전성 확보 조치</h2>
+<p>회사는 개인정보 보호를 위해 다음과 같은 안전성 확보 조치를 취하고 있습니다.</p>
+<ul>
+  <li><strong>관리적 조치:</strong> 내부관리계획 수립 및 시행, 정기적 직원 교육 실시</li>
+  <li><strong>기술적 조치:</strong> 개인정보 암호화, 보안 프로그램 설치, 접근 권한 관리 시스템 운영</li>
+  <li><strong>물리적 조치:</strong> 서버실 등 데이터 보관 장소의 출입 통제 및 잠금장치 운영</li>
+</ul>
+<h2 id="section9">9. 자동화된 결정에 대한 정보주체의 권리</h2>
+<p>회사는 자율주행 기술의 특성상 인공지능(AI) 기반의 자동화된 판단 시스템을 운용합니다. 정보주체는 「개인정보 보호법」
+제37조의2에 따라 아래와 같은 권리를 행사할 수 있습니다.</p>
+<h3>1) 설명 요구권</h3>
+<p>정보주체는 자동화된 결정이 자신의 권리·의무에 영향을 미치는 경우, 회사에 대하여 해당 <strong>결정의 기준, 절차
+및 활용된 주요 개인정보 항목 등에 대한 설명</strong>을 요구할 수 있습니다.</p>
+<h3>2) 거부권 및 재검토 요구권</h3>
+<ul>
+  <li><strong>거부권:</strong> 자동화된 결정이 정보주체의 권리·의무에 <strong>중대한 영향</strong>을
+미치는 경우, 정보주체는 해당 결정을 거부할 수 있습니다.</li>
+  <li><strong>재검토 요구권:</strong> 자동화된 결정에 대해 사람이 다시 개입하여 판단하도록 <strong>재
+검토를 요구</strong>할 수 있습니다.</li>
+</ul>
+<div class="important-note"> <strong>※ 자율주행 기술 관련 안내:</strong>
+자율주행 중 실시간 조향·제동 등 안전과 직결된 기술적 판단은 실시간 데이터 수집과 알고리즘에 의해 자동 수행됩니다. 이와
+관련된 권리 행사는 개인정보 보호책임자를 통해 접수해 주시면 관련 법령 및 기술적 가용성 범위 내에서 지체 없이 안내해
+드리겠습니다. </div>
+<h2 id="section10">10. 이동형 영상정보처리기기 운영</h2>
+<ul>
+  <li><strong>운영 목적:</strong> 자율주행 도로 환경 인식 성능 검증 및 안전 모니터링</li>
+  <li><strong>운영 대수:</strong> 21대 (테스트 차량에 부착)</li>
+  <li><strong>촬영 범위:</strong> 차량 주변 전방위 영상 및 도로 상황</li>
+</ul>
+<h2 id="section11">11. 개인정보 보호책임자</h2>
+<table>
+  <tbody>
+    <tr>
+      <th>성명 / 담당부서<br>
+      </th>
+      <td>이현성 / 연구개발본부</td>
+    </tr>
+    <tr>
+      <th>이메일 / 연락처</th>
+      <td>hslee@smobi.ai / 1668-5881</td>
+    </tr>
+  </tbody>
+</table>
+<p style="border-top: 1px solid rgb(51, 51, 51); margin-top: 60px; font-size: 13px; color: rgb(119, 119, 119); padding-top: 20px;">
+- '2026년 개인정보 처리방침 작성지침'에 따라 작성하였습니다.<br>
+- 공고일자: 2026년 05월 20일 / 시행일자: 2026년 05월 25일 (V2.0)<br>
+© <strong>주식회사 에스유엠(SUM)</strong>. All rights reserved. </p>
+</div>
+
+</body></html>
