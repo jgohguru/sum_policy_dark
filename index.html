@@ -1,211 +1,365 @@
 <!DOCTYPE html>
-<html lang="ko"><head>
-  
-  <meta charset="UTF-8">
+<html>
+<head>
+                <style>.lw { font-size: 60px; font-family: Arial, Helvetica, sans-serif; }</style>
+            </head>
+            <body>
+                
 
-  
-  <style>
-        /* SUM 고대비 다크 테마 스타일 */
-        body { background-color: #000; margin: 0; padding: 0; }
-        .privacy-policy { font-family: 'Pretendard', 'Malgun Gothic', sans-serif; line-height: 1.8; color: #e5e5e5; max-width: 900px; margin: 0 auto; padding: 60px 20px; text-align: justify; }
-        
-        /* 헤더 및 섹션 타이틀 */
-        .privacy-policy h1 { font-size: 32px; font-weight: 700; color: #ffffff; border-bottom: 2px solid #0052cc; padding-bottom: 20px; margin-bottom: 40px; }
-        .privacy-policy h2 { font-size: 22px; font-weight: 600; color: #60afff; margin-top: 50px; margin-bottom: 20px; border-left: 5px solid #0052cc; padding-left: 15px; }
-        .privacy-policy h3 { font-size: 18px; font-weight: 600; color: #ffffff; margin-top: 30px; margin-bottom: 12px; }
-        
-        /* 2026년 개인정보 처리방침 가이드 표준 라벨링 */
-        .policy-labeling { border: 1px solid #444; border-radius: 16px; padding: 25px; margin-bottom: 20px; background-color: #0d0d0d; box-shadow: 0 4px 25px rgba(0,0,0,0.7); }
-        .labeling-title { font-weight: bold; font-size: 19px; color: #60afff; margin-bottom: 20px; display: flex; align-items: center; }
-        .labeling-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; }
-        .labeling-item { border: 1px solid #333; padding: 18px; border-radius: 12px; text-align: center; background: #151515; }
-        .labeling-item .icon { font-size: 26px; margin-bottom: 10px; display: block; }
-        .labeling-text { font-size: 13px; font-weight: 600; color: #bbb; display: block; }
-        .labeling-value { font-size: 12px; color: #ffffff; margin-top: 6px; display: block; font-weight: bold; }
 
-        /* 테이블 스타일 */
-        .privacy-policy table { width: 100%; border-collapse: collapse; margin: 25px 0; background-color: #050505; border-radius: 8px; }
-        .privacy-policy th, .privacy-policy td { border: 1px solid #333; padding: 14px; font-size: 14px; }
-        .privacy-policy th { background-color: #1a1a1a; color: #60afff; font-weight: 700; text-align: center; }
-        .privacy-policy td { color: #f0f0f0; }
-        
-        /* 목차(TOC) */
-        .privacy-policy .toc { background-color: #0a0a0a; border: 1px solid #222; padding: 25px; border-radius: 12px; margin-top: -60px; margin-bottom: 40px; }
-        .privacy-policy .toc h3 { margin-top: 0; color: #bbb; font-size: 15px; }
-        .privacy-policy .toc ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .privacy-policy .toc a { color: #ccc; text-decoration: none; font-size: 14px; }
-        .privacy-policy .toc a:hover { color: #60afff; text-decoration: underline; }
-        
-        /* 강조 및 박스 요소 */
-        .important-note { background: #2a0e0e; border: 1px solid #8e2121; padding: 18px; border-radius: 8px; margin: 25px 0; font-size: 14px; color: #ffa39e; }
-        .privacy-policy strong { color: #ffffff; font-weight: 600; }
-        .privacy-policy li { margin-bottom: 12px; color: #e5e5e5; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주식회사 에스유엠 - 개인정보 처리방침 (V2.1)</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Pretendard', -apple-system, system-ui, sans-serif;
+            line-height: 1.8;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #ffffff;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+            font-size: 2.1rem;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-top: 45px;
+            border-bottom: 1px solid #2c2c2c;
+            padding-bottom: 8px;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: #03dac6;
+            margin-top: 25px;
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+
+        p, li {
+            color: #aaaaaa;
+            font-size: 0.98rem;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #03dac6;
+            text-decoration: none;
+            border-bottom: 1px dashed #03dac6;
+        }
+
+        a:hover {
+            color: #bb86fc;
+            border-bottom: 1px solid #bb86fc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #1e1e1e;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 12px 14px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #272727;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .toc-box {
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border: 1px solid #2c2c2c;
+        }
+
+        .toc-box h3 {
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .toc-box ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .toc-box li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: #03dac6;
+            font-weight: bold;
+        }
+
+        /* 리디자인: 주요 처리 표시 (라벨링) 시각화 스타일 */
+        .summary-wrapper {
+            border: 1px solid #03dac6;
+            border-left: 5px solid #03dac6; 
+            padding: 22px;
+            border-radius: 0px 8px 8px 0px;
+            background-color: #151922; 
+            box-shadow: 0 4px 15px rgba(3, 218, 198, 0.05); 
+            margin-bottom: 35px;
+        }
+
+        .summary-wrapper h4 {
+            color: #03dac6;
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .summary-wrapper h4 span {
+            background-color: #03dac6;
+            color: #121212;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 12px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .summary-wrapper li {
+            color: #d0d0d0;
+            font-size: 0.94rem;
+        }
     </style>
-</head><body>
-<div class="privacy-policy">
-<h1>개인정보 처리방침 (V2.0)</h1>
-<div class="policy-labeling">
-<div class="labeling-title">🔍 핵심 개인정보 처리 표시 (Labeling)</div>
-<div class="labeling-grid">
-<div class="labeling-item"> <span class="icon">📧</span> <span class="labeling-text">수집 항목</span> <span class="labeling-value">민원인
-성명, 연락처</span> </div>
-<div class="labeling-item"> <span class="icon">⚖️</span> <span class="labeling-text">처리 목적</span> <span class="labeling-value">민원 처리
-및 R&amp;D</span> </div>
-<div class="labeling-item"> <span class="icon">📅</span> <span class="labeling-text">보유 기간</span> <span class="labeling-value">민원 종료
-후 3년</span> </div>
-<div class="labeling-item"> <span class="icon">🤝</span> <span class="labeling-text">제3자 제공</span> <span class="labeling-value">있음
-(사고 발생 시)</span> </div>
-<div class="labeling-item"> <span class="icon">🤖</span> <span class="labeling-text">자동화 결정</span> <span class="labeling-value">있음
-(자율주행)</span> </div>
-<div class="labeling-item"> <span class="icon">📞</span> <span class="labeling-text">보호책임자</span> <span class="labeling-value">hslee@smobi.ai</span>
-</div>
-</div>
-</div>
-<p><strong>주식회사 에스유엠</strong>(이하 ‘회사’)은 「개인정보 보호법」 및 관계 법령에 따라 정보주체의
-개인정보를 보호하고 관련 고충을 신속하게 처리할 수 있도록 다음과 같이 개인정보 처리방침을 수립·공개합니다.</p>
-<nav class="toc"> </nav>
-<h3>[목차]</h3>
-<ul>
-  <li><a href="#section1">1. 개인정보의 처리 목적</a></li>
-  <li><a href="#section2">2. 처리하는 개인정보의 항목</a></li>
-  <li><a href="#section3">3. 개인정보의 처리 및 보유기간</a></li>
-  <li><a href="#section4">4. 개인정보의 제3자 제공</a></li>
-  <li><a href="#section5">5. 개인정보 처리업무의 위탁</a></li>
-  <li><a href="#section6">6. 개인정보의 파기 절차 및 방법</a></li>
-  <li><a href="#section7">7. 정보주체의 권리·의무</a></li>
-  <li><a href="#section8">8. 안전성 확보 조치</a></li>
-  <li><a href="#section9">9. 자동화된 결정에 대한 권리</a></li>
-  <li><a href="#section10">10. 이동형 영상기기 운영</a></li>
-  <li><a href="#section11">11. 보호책임자 및 연락처</a></li>
-</ul>
-<h2 id="section1">1. 개인정보의 처리 목적</h2>
-<p>회사는 다음의 목적을 위하여 개인정보를 처리합니다. 회사는 홈페이지를 통한 회원 가입을 진행하지 않으며, 아래 목적 이외의
-용도로는 이용하지 않습니다.</p>
-<ul>
-  <li><strong>민원 및 고충 처리:</strong> 민원인의 신원 확인, 민원 사항 확인, 사실조사를 위한
-연락·통지, 처리 결과 통보</li>
-  <li><strong>자율주행 R&amp;D:</strong> 자율주행 알고리즘 고도화, 주변 환경 인식 및 판단 모델 학습</li>
-  <li><strong>사고 조사:</strong> 자율주행 차량 사고 발생 시 원인 규명을 위한 데이터 분석, 국토교통부
-자율주행자동차 사고조사위원회 및 보험사에 사고관련 정보 제공</li>
-</ul>
-<h2 id="section2">2. 처리하는 개인정보의 항목</h2>
-<table>
-  <thead> <tr>
-    <th>구분</th>
-    <th>수집 항목</th>
-    <th>수집 방법</th>
-  </tr>
-  </thead> <tbody>
-    <tr>
-      <td><strong>민원 처리</strong></td>
-      <td>성명, 연락처(전화번호 또는 이메일), 문의/민원 내용</td>
-      <td>이메일, 전화, 서면 접수</td>
-    </tr>
-    <tr>
-      <td><strong>주행 데이터</strong></td>
-      <td>주행 영상 및 이미지, GPS, 로그 데이터</td>
-      <td>테스트 차량 운행 중 자동 수집</td>
-    </tr>
-    <tr>
-      <td><strong>접속 정보</strong></td>
-      <td>IP주소, 쿠키, 기기정보, 방문기록</td>
-      <td>웹사이트 이용 시 자동 생성</td>
-    </tr>
-  </tbody>
-</table>
-<h2 id="section3">3. 개인정보의 처리 및 보유기간</h2>
-<p>회사는 법령에 따른 보유 기간 또는 정보주체로부터 동의받은 기간 내에서 개인정보를 처리·보유합니다.</p>
-<ul>
-  <li><strong>민원 및 고충 처리 기록:</strong> 민원 처리 종료 후 <strong>3년</strong></li>
-  <li><strong>자율주행 R&amp;D 데이터:</strong> 수집 후 최대 5년 (가명 처리 시 연구 목적 달성
-시까지)</li>
-  <li><strong>이동형 영상 정보:</strong> 촬영 후 30일 이내 (사고 증빙 등 정당한 사유가 있는 경우 예외)</li>
-</ul>
-<h2 id="section4">4. 개인정보의 제3자 제공</h2>
-<p>회사는 정보주체의 동의가 있거나 법률의 특별한 규정에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.</p>
-<table>
-  <thead> <tr>
-    <th>제공받는 자</th>
-    <th>제공 목적</th>
-    <th>제공 항목</th>
-    <th>보유 기간</th>
-  </tr>
-  </thead> <tbody>
-    <tr>
-      <td>보험사 및 사고조사 위원회</td>
-      <td>자율주행 사고 원인 규명 및 보험 처리</td>
-      <td>사고 시점 주행 영상, GPS, 로그</td>
-      <td>사고 처리 종료 시까지</td>
-    </tr>
-  </tbody>
-</table>
-<h2 id="section5">5. 개인정보 처리업무의 위탁</h2>
-<p>회사는 원활한 업무 처리를 위해 아래와 같이 업무를 위탁할 수 있으며, 수탁자가 지정/변경될 경우 지체 없이 본 방침을
-통해 공개합니다.</p>
-<ul>
-  <li><strong>IT 인프라 유형:</strong> 클라우드 서버 운영 및 데이터 보관 (i.e. AWS 등)</li>
-  <li><strong>데이터 가공 유형:</strong> AI 학습 데이터 레이블링 및 영상 비식별화 처리<br>
-  </li>
-</ul>
-<h2 id="section6">6. 개인정보의 파기 절차 및 방법</h2>
-<p>회사는 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를
-파기합니다.</p>
-<ul>
-  <li><strong>절차:</strong> 파기 사유 발생 시 대상 선정 후 보호책임자의 승인을 거쳐 파기합니다.</li>
-  <li><strong>방법:</strong> 전자적 파일은 기록을 재생할 수 없는 기술적 방법을 사용하며, 종이 문서는
-분쇄하거나 소각합니다.</li>
-</ul>
-<h2 id="section7">7. 정보주체와 법정대리인의 권리·의무</h2>
-<p>정보주체는 언제든지 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다. 권리 행사는 서면, 전자우편 등을 통해
-가능하며 회사는 이에 대해 지체 없이 조치하겠습니다.</p>
-<h2 id="section8">8. 개인정보의 안전성 확보 조치</h2>
-<p>회사는 개인정보 보호를 위해 다음과 같은 안전성 확보 조치를 취하고 있습니다.</p>
-<ul>
-  <li><strong>관리적 조치:</strong> 내부관리계획 수립 및 시행, 정기적 직원 교육 실시</li>
-  <li><strong>기술적 조치:</strong> 개인정보 암호화, 보안 프로그램 설치, 접근 권한 관리 시스템 운영</li>
-  <li><strong>물리적 조치:</strong> 서버실 등 데이터 보관 장소의 출입 통제 및 잠금장치 운영</li>
-</ul>
-<h2 id="section9">9. 자동화된 결정에 대한 정보주체의 권리</h2>
-<p>회사는 자율주행 기술의 특성상 인공지능(AI) 기반의 자동화된 판단 시스템을 운용합니다. 정보주체는 「개인정보 보호법」
-제37조의2에 따라 아래와 같은 권리를 행사할 수 있습니다.</p>
-<h3>1) 설명 요구권</h3>
-<p>정보주체는 자동화된 결정이 자신의 권리·의무에 영향을 미치는 경우, 회사에 대하여 해당 <strong>결정의 기준, 절차
-및 활용된 주요 개인정보 항목 등에 대한 설명</strong>을 요구할 수 있습니다.</p>
-<h3>2) 거부권 및 재검토 요구권</h3>
-<ul>
-  <li><strong>거부권:</strong> 자동화된 결정이 정보주체의 권리·의무에 <strong>중대한 영향</strong>을
-미치는 경우, 정보주체는 해당 결정을 거부할 수 있습니다.</li>
-  <li><strong>재검토 요구권:</strong> 자동화된 결정에 대해 사람이 다시 개입하여 판단하도록 <strong>재
-검토를 요구</strong>할 수 있습니다.</li>
-</ul>
-<div class="important-note"> <strong>※ 자율주행 기술 관련 안내:</strong>
-자율주행 중 실시간 조향·제동 등 안전과 직결된 기술적 판단은 실시간 데이터 수집과 알고리즘에 의해 자동 수행됩니다. 이와
-관련된 권리 행사는 개인정보 보호책임자를 통해 접수해 주시면 관련 법령 및 기술적 가용성 범위 내에서 지체 없이 안내해
-드리겠습니다. </div>
-<h2 id="section10">10. 이동형 영상정보처리기기 운영</h2>
-<ul>
-  <li><strong>운영 목적:</strong> 자율주행 도로 환경 인식 성능 검증 및 안전 모니터링</li>
-  <li><strong>운영 대수:</strong> 21대 (테스트 차량에 부착)</li>
-  <li><strong>촬영 범위:</strong> 차량 주변 전방위 영상 및 도로 상황</li>
-</ul>
-<h2 id="section11">11. 개인정보 보호책임자</h2>
-<table>
-  <tbody>
-    <tr>
-      <th>성명 / 담당부서<br>
-      </th>
-      <td>이현성 / 연구개발본부</td>
-    </tr>
-    <tr>
-      <th>이메일 / 연락처</th>
-      <td>hslee@smobi.ai / 1668-5881</td>
-    </tr>
-  </tbody>
-</table>
-<p style="border-top: 1px solid rgb(51, 51, 51); margin-top: 60px; font-size: 13px; color: rgb(119, 119, 119); padding-top: 20px;">
-- '2026년 개인정보 처리방침 작성지침'에 따라 작성하였습니다.<br>
-- 공고일자: 2026년 05월 20일 / 시행일자: 2026년 05월 25일 (V2.0)<br>
-© <strong>주식회사 에스유엠(SUM)</strong>. All rights reserved. </p>
-</div>
 
-</body></html>
+
+
+    <h1>개인정보 처리방침</h1>
+
+    <p>주식회사 에스유엠(이하 '회사')은 정보주체의 자유와 권리 보호를 위해 「개인정보 보호법」 및 관계 법령이 정한 바를 준수하여, 적법하게 개인정보를 처리하고 안전하게 관리하고 있습니다. 회사는 「개인정보 보호법」 제30조에 따라 정보주체에게 개인정보의 처리와 보호에 관한 절차 및 기준을 안내하고, 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리방침을 수립·공개합니다.</p>
+
+    <div class="summary-wrapper">
+        <h4><span>📋 주요 처리 표시</span> 개인정보 처리 핵심 사항 안내</h4>
+        <ul>
+            <li><b>수집 최소화 준수:</b> 본 웹사이트는 별도의 회원가입 절차가 없으며, 이용자의 주도적인 기술/제휴 문의 접수 시에만 최소한의 개인정보를 수집합니다.</li>
+            <li><b>자율주행 영상 정보 통제:</b> 주행 테스트 중 카메라를 통해 도로 주변 영상정보가 수집될 수 있으며, 식별 가능한 안면 및 번호판은 보존 기간 내 전량 비식별화(블러) 조치합니다.</li>
+            <li><b>오프라인 시설 보안 강화:</b> 기술연구소 및 자산 차고지 보안을 위해 고정형 영상정보처리기기(CCTV)를 투명하게 설치 및 운영합니다.</li>
+            <li><b>위탁 및 제공 투명성:</b> 회사는 수집된 제휴 및 기술 문의 정보를 외부에 위탁하거나 제3자에게 제공하지 않습니다.</li>
+        </ul>
+    </div>
+
+    <div class="toc-box">
+        <h3>&lt; 목 차 &gt;</h3>
+        <ul>
+            <li><a href="#link1">1. 개인정보의 처리 목적 및 항목 (홈페이지 문의 접수)</a></li>
+            <li><a href="#link2">2. 개인정보의 처리 및 보유 기간</a></li>
+            <li><a href="#link3">3. 개인정보의 파기 절차 및 방법</a></li>
+            <li><a href="#link4">4. 이동형 영상정보처리기기 운영·관리에 관한 사항 (자율주행 테스트 차량)</a></li>
+            <li><a href="#link5">5. 고정형 영상정보처리기기 운영·관리에 관한 사항 (기술연구소 및 차고지)</a></li>
+            <li><a href="#link6">6. 인공지능(AI) 학습데이터 수집·이용 및 보호 기준</a></li>
+            <li><a href="#link7">7. 정보주체와 법정대리인의 권리·의무 및 행사방법</a></li>
+            <li><a href="#link8">8. 개인정보의 안전성 확보조치</a></li>
+            <li><a href="#link9">9. 개인정보 보호책임자 및 권익침해 구제방법</a></li>
+            <li><a href="#link10">10. 개인정보 처리방침의 변경에 관한 사항 (개정 사항 대조표 포함)</a></li>
+        </ul>
+    </div>
+
+    <h2 id="link1">1. 개인정보의 처리 목적 및 항목</h2>
+    <p>회사는 서비스 제공 및 문의 응대를 위해 필요 최소한의 범위 내에서 개인정보를 처리합니다. 회사가 홈페이지를 통해 동의 없이 처리하는 항목과 법적 근거는 다음과 같습니다.</p>
+
+    <h3>[홈페이지 문의 접수 처리 항목]</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>법적 근거</th>
+                <th>처리 목적</th>
+                <th>수집 및 처리 항목</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>개인정보 보호법 제15조 제1항 제6호</b><br>(개인정보처리자의 정당한 이익 달성)</td>
+                <td>홈페이지 'Contact Us' 채널을 통한 기술 제휴, 사업 협력, 일반 문의에 대한 본인 확인 및 답변 회신</td>
+                <td>성명, 전자우편(E-mail) 주소, 휴대전화번호, 회사명, 직책</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>※ 회사는 본 웹사이트 내에서 별도의 이용자 회원가입 조항을 운영하지 않으며, 마케팅 광고성 정보를 수집하지 않습니다.</p>
+
+    <h2 id="link2">2. 개인정보의 처리 및 보유 기간</h2>
+    <p>회사는 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보 수집 시에 안내한 보유·이용기간 내에서 개인정보를 안전하게 처리·보유합니다.</p>
+    <ul>
+        <li><span class="highlight">홈페이지 문의 접수 및 이력 관리:</span> 문의 사항에 대한 답변 처리 및 <span class="highlight">고객 고충 해결 완료 시점으로부터 1년간 보관</span> 후 지체 없이 파기합니다.</li>
+    </ul>
+
+    <h2 id="link3">3. 개인정보의 파기 절차 및 방법</h2>
+    <p>① 회사는 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를 파기합니다.</p>
+    <p>② 개인정보 파기의 절차 및 방법은 다음과 같습니다.</p>
+    <ul>
+        <li><b>파기절차:</b> 파기 사유가 발생한 개인정보를 내부 시스템에서 자동 또는 수동 선정하고, 회사의 개인정보 보호책임자의 승인을 거쳐 파기를 집행합니다.</li>
+        <li><b>파기방법:</b> 전자적 파일 형태로 저장된 데이터는 기록을 재생할 수 없도록 영구 삭제 처리하며, 종이 문서에 출력된 형태의 정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.</li>
+    </ul>
+
+    <h2 id="link4">4. 이동형 영상정보처리기기 운영·관리에 관한 사항</h2>
+    <p>회사는 공공도로에서의 자율주행자동차 실차 주행 테스트, 사물 인지 인공지능 알고리즘 개발 및 주행 안전성 연구 R&amp;D를 목적으로 다음과 같이 이동형 영상정보처리기기를 운용하고 있습니다.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>운영 기기 유형</th>
+                <th>운영 대수</th>
+                <th>촬영 시간 및 범위</th>
+                <th>보존 기간 및 장소</th>
+                <th>영상정보 보호 조치 (비식별화)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>자율주행 차량 탑재 외부 카메라 및 센서 일체</td>
+                <td>SUM 전용 주행 연구 차량 전수</td>
+                <td>차량 도로 주행 및 실차 시험 운행 시간 내,<br>차량 주변 전 방향 외부 영상 촬영</td>
+                <td>촬영일로부터 <span class="highlight">90일 이내</span>,<br>SUM 데이터 센터 내 보안 서버 보관</td>
+                <td><b>회사는 공공도로 주행 중 촬영된 영상 정보 내에 포함될 수 있는 보행자의 안면 정보 및 차량 번호판 등 특정 개인을 알아볼 수 있는 정보에 대하여, 보존 기간 내에 영구적인 비식별화(블러 및 마스킹) 조치를 전량 적용하여 안전하게 관리합니다.</b></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="link5">5. 고정형 영상정보처리기기 운영·관리에 관한 사항</h2>
+    <p>회사는 「개인정보 보호법」 제25조제7항에 의거, 오프라인 핵심 연구 시설물 및 중요 개발 자산 인프라 보안을 위해 고정형 영상정보처리기기(CCTV)를 설치·운영하고 있으며 세부 방침은 다음과 같습니다.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>설치 근거 및 목적</th>
+                <th>설치 대수 / 위치</th>
+                <th>촬영시간 / 보관기간</th>
+                <th>보관 장소 및 확인 방법</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>범죄 예방, 시설 안전 관리,<br>화재 예방 및 자율주행 실증 데이터 수집</td>
+                <td>총 ○○대 /<br>버스 실내 및 전후방</td>
+                <td>운행 시간 내 /<br>촬영일로부터 30일간 보관</td>
+                <td>각 차량 실내 안전박스 안 DVR에 보관 /<br>보호책임자 사전 승인 후 방문 열람 가능</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="link6">6. 인공지능(AI) 학습데이터 수집·이용 및 보호 기준</h2>
+    <p>회사는 자율주행 인지 모델 고도화를 구현하기 위해 주행 데이터를 활용함에 있어, 최소 수집 및 투명성 준수를 위해 다음과 같은 내부 통제 기준을 수립하여 이행하고 있습니다.</p>
+    <ul>
+        <li><b>목적 명확화 및 최소 처리:</b> 자율주행 연구에 필요한 가량의 기하학적 형태 및 도로 환경 데이터 위주로 전처리하며, 개인의 사생활을 침해할 우려가 있는 데이터 유형은 전처리 필터링 시스템을 통해 원천적으로 배제합니다.</li>
+        <li><b>안전성 조치:</b> 연구개발용 데이터베이스에 대해 일반 업무망과 물리적으로 차단된 전용 가상 네트워크(VPN) 및 접근 권한 통제 시스템을 적용하여 안전하게 보호하고 있습니다.</li>
+    </ul>
+
+    <h2 id="link7">7. 정보주체와 법정대리인의 권리·의무 및 행사방법</h2>
+    <p>① 정보주체는 회사에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다.</p>
+    <p>② 권리 행사는 회사에 대해 서면, 전화, 전자우편 등을 통하여 하실 수 있으며 회사는 본인 확인 절차를 거쳐 지체 없이 조치하겠습니다.</p>
+    <p>③ 자율주행 차량 테스트 중 수집된 영상이나 시설 CCTV의 경우 본인이 명확히 촬영된 구간 및 시간에 한하여 열람을 청구할 수 있습니다. 단, 타인의 사생활 권리를 부당하게 침해할 우려가 있는 정당한 사유가 있을 경우 청구가 제한될 수 있습니다.</p>
+
+    <h2 id="link8">8. 개인정보의 안전성 확보조치</h2>
+    <p>회사는 개인정보의 안전성 확보를 위해 다음과 같은 기술적·관리적·물리적 조치를 취하고 있습니다.</p>
+    <ul>
+        <li><b>관리적 조치:</b> 데이터보호 내부관리계획 수립 및 시행, 전담 직원 정기 보안 교육</li>
+        <li><b>기술적 조치:</b> 개인정보처리시스템 접근 권한 차등 부여, 인터넷망 물리적 차단 및 방화벽 운영, 가명처리 알고리즘 및 암호화 전송 적용</li>
+        <li><b>물리적 조치:</b> 주행 데이터 서버실 및 전산실에 대한 제한구역 설정 및 인가자 중심의 출입 통제</li>
+    </ul>
+
+    <h2 id="link9">9. 개인정보 보호책임자 및 권익침해 구제방법</h2>
+    <p>회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
+    <ul>
+        <li><b>개인정보 보호책임자(CPO):</b> 기술연구소 총괄 소장 (연락처: 1668-5881, 이메일: privacy@smobi.ai)</li>
+        <li><b>개인정보보호 담당부서:</b> 데이터보호전략팀 (연락처: 1668-5881, 이메일: privacy@smobi.ai)</li>
+    </ul>
+    <p>회사의 내부적인 해결 외에 외부 전문 기관의 추가적인 피해 구제 및 상담이 필요한 경우 아래 기관에 문의하실 수 있습니다.</p>
+    <ol>
+        <li>개인정보 분쟁조정위원회 : (국번없이) 1833-6972 (www.kopico.go.kr)</li>
+        <li>개인정보침해 신고센터 : (국번없이) 118 (privacy.kisa.or.kr)</li>
+        <li>경찰청 사이버수사국 : (국번없이) 182 (ecrm.police.go.kr)</li>
+    </ol>
+
+    <h2 id="link10">10. 개인정보 처리방침의 변경에 관한 사항</h2>
+    <p>① 이 개인정보 처리방침은 2026년 7월 1일부터 적용됩니다.</p>
+    <p>② 회사는 변동사항에 대하여 모아서 공지하는 '모아 안내 방식'을 채택하고 있으며, 본 방침의 주요 개정 이력 및 전후 대비 사항은 아래 <b>[개정 사항 대조표]</b>를 통해 투명하게 확인하실 수 있습니다.</p>
+
+    <h3>[개인정보 처리방침 개정 사항 대조표 (V2.0 → V3.0)]</h3>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 15%;">개정 조항</th>
+                <th style="width: 35%;">개정 전 원본 (V2.0)</th>
+                <th style="width: 35%;">개정 후 수정본 (V3.0)</th>
+                <th style="width: 15%;">개정 사유</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="highlight">제1조<br>처리 목적 및 항목</td>
+                <td>• 일반적인 웹사이트 기본 서식을 차용하여 명시 (회원 서비스 등 모호한 표현 포함)</td>
+                <td>• <b>회원가입/로그인/결제 조항 전량 배제 및 삭제</b><br>• 홈페이지 'Contact Us'를 통한 순수 비즈니스 제휴 및 기술 문의 처리(최소 정보)로 단일화</td>
+                <td>실무 운영 현황(회원제 미운영)을 정확히 반영하여 정보 최소화 원칙 준수</td>
+            </tr>
+            <tr>
+                <td class="highlight">제4조<br>이동형 영상기기</td>
+                <td>• 자율주행 테스트 차량 외부 카메라 및 센서 정보 수집에 관한 고지 누락 (해당 조항 부재)</td>
+                <td>• <b>이동형 영상정보처리기기 운영 방침 신설</b><br>• 주행 연구 차량 전수 운영 사실 및 <b>안면/번호판 전량 비식별화(블러) 조치 명시</b></td>
+                <td>자율주행자동차 R&amp;D 기업 필수 법적 고지 의무 확보 (2026 지침 준수)</td>
+            </tr>
+            <tr>
+                <td class="highlight">제5조<br>고정형 영상기기</td>
+                <td>• 사옥 내부 및 주요 연구 자산 보관 시설용 고정형 CCTV 고지 누락</td>
+                <td>• <b>고정형 영상정보처리기기(CCTV) 운영 방침 통합 신설</b><br>• 기술연구소 및 실차 차고지 내 ○○대 설치, 24시간 촬영 및 30일 보관 정책 명시</td>
+                <td>오프라인 시설 보안 장치 운영에 따른 정보주체의 알 권리 보장 및 방침 통합</td>
+            </tr>
+            <tr>
+                <td class="highlight">제6조<br>AI 학습데이터</td>
+                <td>• 자율주행 알고리즘 개발을 위한 데이터셋 활용 및 보호 기준 부재</td>
+                <td>• <b>인공지능(AI) 학습데이터 수집·이용 및 보호 기준 독립 조항 신설</b><br>• 목적 외 사생활 침해 데이터 전처리 필터링 가이드 선언</td>
+                <td>2026년 최신 가이드라인 권장안 선제적 수용을 통한 대외적 신뢰성 제고</td>
+            </tr>
+            <tr>
+                <td class="highlight">제10조<br>방침의 변경</td>
+                <td>• 이전 방침 변경 이력에 대한 명확한 이정표 부재</td>
+                <td>• 변경사항에 대한 <b>'연단위 모아 안내 방식'</b> 도입 공식 선언<br>• <b>[개정 사항 대조표] 본문 하단 직접 삽입</b></td>
+                <td>정보주체 중심의 투명한 개정 이력 관리 인프라 확보</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="margin-top: 20px;">③ 이전의 개인정보 처리방침 적용 이력은 아래 아카이브 링크를 통해 확인하실 수 있습니다.</p>
+    <ul>
+
+        <li><a href="#">2026. 1. 6 ~ 2026. 06. 30 적용 개인정보 처리방침 (보기)</a></li>
+        
+        <!-- 변경된 소스 코드 상세 인용 -->
+        <li><a href="https://smobi.ai/boards/24/view?referer=%2Fpages%2Fnotice" target="_blank">과거 개인정보 처리방침 개정 이력 아카이브 바로가기</a></li>
+    </ul>
+
+
+
+                <script>// Write JavaScript here</script>
+            
+        
+    </body>
